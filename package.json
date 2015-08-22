@@ -1,0 +1,32 @@
+{
+  "name": "menu-element",
+  "version": "1.0.0",
+  "description": "a menu. yay.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/menu-element.git"
+  },
+  "keywords": [
+    "element",
+    "html",
+    "component"
+  ],
+  "author": "sethvincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sethvincent/menu-element/issues"
+  },
+  "homepage": "https://github.com/sethvincent/menu-element#readme",
+  "dependencies": {
+    "base-element": "^3.0.1",
+    "inherits": "^2.0.1"
+  },
+  "devDependencies": {
+    "budo": "^4.2.1",
+    "tape": "^4.2.0"
+  }
+}
