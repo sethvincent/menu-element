@@ -8,23 +8,26 @@ npm i --save menu-element
 
 ## Example
 
-```js
-var item = require('menu-element/item')
+```
 var menu = require('menu-element')(document.body)
+var dropdown = require('menu-element/dropdown')
+var item = require('menu-element/item')
 
 var pizza = item({ id: 'pizza', text: 'Pizza' })
 var poop = item({ id: 'poop', text: 'Poop' })
 var another = item({ id: 'another', text: 'Another' })
-var more = require('menu-element/dropdown')({ id: 'more', text: 'More' })
+var more = dropdown({
+  id: 'more',
+  text: 'More',
+  elements: [another]
+})
 
 var state = { open: false }
 
 function render (state) {
   menu.render([
     pizza.render(state),
-    more.render([
-      another.render(state)
-    ], state),
+    more.render(state),
     poop.render(state)
   ], state)
 }
